@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b64e72a7-75a2-48a5-94b8-1f1ce353d761" isOneWay="false" action="http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP" name="GetCityForecastByZIP" bindingOperationName="GetCityForecastByZIP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b64e72a7-75a2-48a5-94b8-1f1ce353d761fileName">GetCityForecastByZIP</con:setting></con:settings><con:call id="0c5f44b3-cf7d-42c0-9d2d-a0ca11867cf9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://wsf.cdyne.com/WeatherWS/Weather.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:weat="http://ws.cdyne.com/WeatherWS/">
+   <soap:Header/>
+   <soap:Body>
+      <weat:GetCityForecastByZIP>
+         <!--Optional:-->
+         <weat:ZIP>?</weat:ZIP>
+      </weat:GetCityForecastByZIP>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ws.cdyne.com/WeatherWS/WeatherSoap/GetCityForecastByZIPRequest"/></con:call></con:operation>
